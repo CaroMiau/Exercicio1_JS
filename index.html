@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Faça um Programa que peça as 4 notas bimestrais e mostre a média
+let nota1 = parseFloat(prompt("Digite a nota 1:"));
+let nota2 = parseFloat(prompt("Digite a nota 2:"));
+let nota3 = parseFloat(prompt("Digite a nota 3:"));
+let nota4 = parseFloat(prompt("Digite a nota 4:"));
+
+let média = (nota1 + nota2 + nota3 + nota4)/4;
+
+console.log("A média é de: " + média);
+
+// Faça um Programa que peça o raio de um círculo, calcule e mostre sua área
+
+let raio = parseFloat(prompt("Qual o raio do círculo? "));
+
+let area = (Math.PI*raio**2);
+
+console.log("A área do círculo é de: " + area);
+
+//Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius. C = 5 * ((F-32) / 9).
+
+let f = parseFloat(prompt("Digite uma temperatura em Fahrenheit: "));
+
+let celsius = (5 * ((f-32) / 9));
+
+console.log("A temperatura em °C é de: " + celsius);
+
+//Faça um programa que calcule e mostre a  area e o perímetro de uma sala retangular cujas medidas são fornecidas pelo usuário
+
+let lado = parseFloat(prompt("Digite o valor do lado da sala: "));
+let comprimento = parseFloat(prompt("Digite o valor do comprimento da sala: "));
+
+let area_sala = (lado*comprimento);
+
+let perímetro = (2*lado + 2*comprimento);
+
+console.log("A área da sala é de: " + area_sala);
+console.log("O perímetro da sala é de: " + perímetro);
+
+//Escreva um programa para ler as dimensões de uma cozinha retangular, em seguida calcular e escrever a quantidade de caixas de azulejos necess arias para cobrir o chão da cozinha. Cada caixa de azulejos possui 2,5 m2.
+
+let lado_cozinha = parseFloat(prompt("Digite o lado da cozinha: "));
+let comprimento_cozinha = parseFloat(prompt("Digite o comprimento da cozinha: "));
+
+let area_cozinha = (lado_cozinha*comprimento_cozinha);
+
+let caixas = area_cozinha/2.5;
+
+console.log("A quantidade de caixas necessárias é de: " + caixas);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
